@@ -1,0 +1,26 @@
+#### Use IMDB-WIKI dataset
+
+Download IMDB-WIKI dataset (Download faces only 7gb) and put in the dataset/imdb_crop folder.
+
+https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
+
+### Train using Keras
+
+Install keras-squeezenet
+
+https://github.com/rcmalli/keras-squeezenet
+
+Run classifier task using keras.
+
+`python agegender_train.py age101 squeezenet imdb`
+
+`python agegender_train.py gender squeezenet imdb`
+
+### Test using Keras
+
+Test classifier task using keras.
+
+`python agegender_predict.py age101 squeezenet imdb`
+
+`python agegender_predict.py gender squeezenet imdb`
+
